@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Wenhao Gai</title>
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Limelight&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wdth,wght,YTLC@0,6..12,88.4,200..1000,528;1,6..12,88.4,200..1000,528&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Merriweather:wght@400;700&display=swap" rel="stylesheet">
+
+  <style>
+    /* Global Styles */
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: 'Roboto', Arial, sans-serif;
+      background: linear-gradient(135deg, #4A5D23, #D3E298, #606C38);
+      color: #1F1F1F;
+      font-size: 18px;
+    }
+
+    h1, h2, h3 {
+      font-family: 'Limelight', serif;
+      font-size: 36px; /* Increased font size */
+    }
+
+    a {
+      text-decoration: none;
+      color: inherit;
+    }
+
+    header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 20px 30px;
+      background: linear-gradient(135deg, #4A5D23, #D3E298);
+      color: white;
+    }
+
+    .title {
+      font-size: 32px; /* Increased font size */
+      font-weight: bold;
+      color: white;
+    }
+
+    .chinese-name {
+      font-size: 18px; /* Increased font size */
+      margin-left: 5px;
+      color: #F7F7F7;
+    }
+
+    nav a {
+      margin: 0 20px;
+      font-weight: bold;
+      color: white;
+      font-size: 18px; /* Increased font size */
+    }
+
+    nav a:hover {
+      color: #F1F7E5;
+    }
+
+    main {
+      margin: 30px auto;
+      width: 90%;
+      max-width: 1200px;
+    }
+
+    .main-visual {
+      background-image: url('https://cdn.wallpapersafari.com/30/24/mgE9ei.jpg');
+      background-size: cover;
+      background-position: center;
+      padding: 120px 30px;
+      text-align: center;
+      color: white;
+      cursor: pointer;
+      border-radius: 10px;
+    }
+
+    .main-visual h2 {
+      font-family: 'Nunito Sans', sans-serif;
+      font-size: 32px; /* Increased font size */
+      margin-bottom: 20px;
+    }
+
+    .main-visual p {
+      font-family: 'Nunito Sans', sans-serif;
+      font-size: 24px; /* Increased font size */
+      max-width: 900px;
+      margin: 0 auto;
+      line-height: 1.6;
+    }
+
+    section {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      gap: 30px;
+      margin-top: 40px;
+    }
+
+    .intro {
+      flex: 2;
+      font-family: 'Nunito Sans', sans-serif;
+      font-size: 24px; /* Increased font size */
+    }
+
+    .message-box {
+      flex: 1;
+      background: #cde7be;
+      padding: 30px;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+
+    .message-box img {
+      width: 100%;
+      border-radius: 10px;
+      margin-bottom: 20px;
+    }
+
+    .social-icons {
+      display: flex;
+      justify-content: center;
+      gap: 15px;
+    }
+
+    .social-icons img {
+      width: 40px;
+      height: 40px;
+      border-radius: 50%;
+      cursor: pointer;
+      transition: transform 0.2s;
+    }
+
+    .social-icons img:hover {
+      transform: scale(1.2);
+    }
+
+    .gallery {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+      justify-content: center;
+      margin-top: 40px;
+    }
+
+    .gallery img {
+      width: 200px;
+      height: 130px;
+      border-radius: 5px;
+      cursor: pointer;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    }
+
+    footer {
+      text-align: center;
+      margin-top: 30px;
+    }
+
+    footer a {
+      color: #333;
+      font-weight: bold;
+      margin: 0 15px;
+      font-size: 20px; /* Increased font size */
+    }
+
+    footer a:hover {
+      color: #4A5D23;
+    }
+
+    /* Custom Font */
+    @font-face {
+      font-family: "Limelight";
+      src: url("path-to-font/Limelight-Regular.ttf") format("truetype");
+      font-weight: 400;
+      font-style: normal;
+    }
+
+    .jersey-text {
+      font-family: "Limelight", serif;
+      font-weight: 400;
+      font-style: normal;
+    }
+
+    /* Responsive Styles */
+    @media (max-width: 768px) {
+      header {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+
+      nav {
+        margin-top: 15px;
+      }
+
+      section {
+        flex-direction: column;
+      }
+
+      .intro, .message-box {
+        flex: 1;
+      }
+
+      .main-visual {
+        width: 100%;
+        padding: 60px 20px;
+      }
+
+      .main-visual h2 {
+        font-size: 24px;
+      }
+
+      .main-visual p {
+        font-size: 20px;
+      }
+
+      .intro {
+        font-size: 22px;
+      }
+
+      .message-box {
+        padding: 20px;
+      }
+    }
+
+    @media (min-width: 1200px) {
+      body {
+        font-size: 20px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="title">
+      Wenhao Gai <span class="chinese-name">盖文浩</span>
+    </div>
+    <nav>
+      <a href="#home">Home</a>
+      <a href="#resume">Resume</a>
+      <a href="#project">Project</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <main>
+    <!-- Main Visual Section -->
+    <div class="main-visual" onclick="window.location.href='https://www.bbc.com/future/article/20211126-how-driverless-cars-will-change-our-world'">
+      <h2>Exploring the Future of Driverless Cars</h2>
+      <p>
+        Autonomous driving technologies are revolutionizing the way we think about transportation. Discover how self-driving cars are set to reshape our lives, from safety to efficiency, and much more.
+      </p>
+    </div>
+
+    <section>
+      <!-- Introduction -->
+      <article class="intro">
+        <h2>About Me</h2>
+        <p>
+          Hello! My name is Wenhao Gai. I am passionate about combining artificial intelligence with autonomous driving to create smart vehicle systems. This website serves as my professional portfolio and a gateway to showcase my projects, experiences, and ideas.
+        </p>
+      </article>
+
+      <!-- About the Author -->
+      <aside class="message-box">
+        <h3>About the Author</h3>
+        <img src="https://www.bing.com/images/blob?bcid=rGAXAlVVJAQIQw" alt="Profile Picture">
+        <p class="jersey-text">
+          I created this webpage to share my journey in smart systems and automation technology, along with my interest in AI-powered vehicles.
+        </p>
+        <div class="social-icons">
+          <a href="https://www.facebook.com/" target="_blank">
+            <img src="https://1.bp.blogspot.com/-S8HTBQqmfcs/XN0ACIRD9PI/AAAAAAAAAlo/FLhccuLdMfIFLhocRjWqsr9cVGdTN_8sgCPcBGAYYCw/s1600/f_logo_RGB-Blue_1024.png" alt="Facebook">
+          </a>
+          <a href="https://www.linkedin.com/in/wenhao-gai-325133158/" target="_blank">
+            <img src="https://th.bing.com/th/id/R.a330e248626552a23af35e5c46526234?rik=DZhkgnpER0YViQ&riu=http%3a%2f%2fpngimg.com%2fuploads%2flinkedIn%2flinkedIn_PNG8.png&ehk=4bFzIDABrAypqOis7809R99fdbUW93GC4XfvnNxZfdA%3d&risl=&pid=ImgRaw&r=0" alt="LinkedIn">
+          </a>
+          <a href="https://www.faceit.com/zh/players/Gaii_" target="_blank">
+            <img src="https://play-lh.googleusercontent.com/4iFS-rI0ImIFZyTwjidPChDOTUGxZqX2sCBLRsf9g_noMIUnH9ywsCmCzSu9vSM9Jg" alt="GitHub">
+          </a>
+        </div>
+      </aside>
+    </section>
+
+    <section class="gallery">
+      <img src="https://th.bing.com/th/id/OIP.vAXmRfnwOl_VahaMaMRneAHaEo?rs=1&pid=ImgDetMain" alt="Car 1">
+      <img src="https://www.motorbiscuit.com/wp-content/uploads/2020/12/Armored-Ferrari-458-Speciale.jpg" alt="Car 2">
+      <img src="https://www.chicagoautoshow.com/assets/1/23/VehicleRegularDimensionId/2023-Lamborghini-Countach-6.jpg" alt="Car 3">
+    </section>
+  </main>
+
+  <footer>
+    <div>
+      <a href="#home">Home</a> | 
+      <a href="#resume">Resume</a> | 
+      <a href="#project">Project</a> | 
+      <a href="#contact">Contact</a>
+    </div>
+    <p>&copy; 2025 Wenhao Gai</p>
+  </footer>
+</body>
+</html>
